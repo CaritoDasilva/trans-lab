@@ -17,17 +17,23 @@
 <body>
   <div class="container is-fluid">
     <div class="notification" id="container">
-      <div class="columns">
-        <div class="column"></div>
-        <div class="column is-three-fifths is-offset-one-fifth" id="title">
+      <!-- Imagen del Logo -->
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter" id="title">
           <img src="docs/imagen.png" alt="">
+        </div>
+      </div>
+      <!-- Título de App -->
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter" id="transLab">
           <h1>TRANS LAB</h1>
         </div>
-        <div class="column"></div>
       </div>
+
       <br>
-      <div class="columns">
-        <div class="column is-three-fifths is-offset-one-fifth">
+      <!-- Login -->
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
           <div class="field">
             <div class="control">
 
@@ -48,14 +54,116 @@
               <h1 style="color: white"> ¿NO TIENES CUENTA? </h1>
               <h1 style="color: #FFE521 "> REGÍSTRATE</h1>
             </div>
-
           </div>
         </div>
       </div>
+      <!-- Menú desplegable -->
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <nav role="navigation" aria-label="dropdown navigation">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                <i class="fas fa-bars"></i>
+              </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  <h5>Ver saldo</h5>
+                </a>
+                <a class="navbar-item">
+                  Calcular tarifa
+                </a>
+                <a class="navbar-item">
+                  Perfil
+                </a>
+                <a class="navbar-item">
+                  Preguntas Frecuentes
+                </a>
+                <a class="navbar-item">
+                  Home
+                </a>
+                <hr class="navbar-divider">
+                <div class="navbar-item">
+                </div>
+              </div>
+            </div>
+          </nav>
+          <br>
+          <!-- Botones de accesos a links -->
+          <a class="button is-warning button is-medium button is-hovered botonesSegundaPantalla" id="verSaldo">VER SALDO</a>
+          <br>
+          <a class="button is-warning button is-medium button is-hovered botonesSegundaPantalla" id="calcularTarida">CALCULAR TARIFA</a>
+          <br>
+          <a class="button is-warning button is-medium button is-hovered botonesSegundaPantalla" id=" buttonAccept ">PERFIL</a>
+          <br>
+          <a class="button is-warning button is-medium button is-hovered botonesSegundaPantalla" id="questions">PREGUNTAS FRECUENTES</a>
+        </div>
+      </div>
     </div>
-  </div>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js "></script>
-  <script src="js/main.js "></script>
+    <!-- Info de Perfil de usuario con funciones para mostrar correo electrónico y añadir tarjetas-->
+    <div id="userAvatar">
+      <img src="docs/avatar.student.gif" alt="" id="avatar">
+    </div>
+    <div id="terceraPantalla">
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <div id="printMail">
+            <h1>hola</h1>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="field">
+            <div class="control">
+              <input class="input is-warning" type="text" placeholder="Número Tarjeta">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <div id="cardSaved"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Pantalla para las preguntas frecuentes -->
+    <div id="cuartaPantalla">
+      <div id="frecuentQuestion">
+        <h1> PREGUNTAS FRECUENTES</h1>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="wrapper">
+
+            <div class="header">
+              <h1 class="header__title">Expanding Card Grid</h1>
+              <h2 class="header__subtitle">with Flexbox</h2>
+            </div>
+
+            <div class="cards">
+
+              <div class=" card [ is-collapsed ] ">
+                <div class="card__inner [ js-expander ]">
+                  <span>Card</span>
+                  <i class="fa fa-folder-o"></i>
+                </div>
+                <div class="card__expander">
+                  <i class="fa fa-close [ js-collapser ]"></i>
+                  Expander
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+      <script src="js/main.js "></script>
 </body>
 
 </html>

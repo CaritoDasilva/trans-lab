@@ -2,8 +2,16 @@
   background-color: #3E3F41;
 }
 
+#transLab {
+  font-size: 2vh;
+  color: #FFE521;
+  text-align: center;
+}
+
 #title {
   align-content: center;
+  margin: auto;
+  padding: 8%;
 }
 
 #buttonAccept {
@@ -17,4 +25,40 @@
 #registrate {
   text-align: center;
   display: inline;
+}
+
+.botonesSegundaPantalla {
+  width: 100%;
+  display: block;
+}
+
+#userAvatar {
+  background-color: #FFE521;
+  padding: 3%;
+}
+
+#avatar {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 30%;
+}
+
+#terceraPantalla {
+  background-color: gray;
+}
+
+#printMail {
+  width: 100%;
+  background-color: white;
+  margin-top: 10%;
+  border-radius: 4px;
+}
+
+#frecuentQuestion {
+  background-color: #FFE521;
+  text-align: center;
+  padding: 10%;
+  color: white;
+  font-size: 5vh;
 }
